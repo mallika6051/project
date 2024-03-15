@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types Example</title>
+</head>
+<body>
+    <h1>Data Types Example</h1>
+    <div id="output">
+        <!-- Output will be displayed here -->
+    </div>
+
+    <script>
+        // Your JavaScript code here
+        let outputDiv = document.getElementById("output");
+
+        // Number
+        let num1 = 10;         // integer
+        let num2 = 3.14;       // floating-point number
+
+        // String
+        let name = 'John';     // single quotes
+        let message = "Hello"; // double quotes
+
+        // Boolean
+        let isTrue = true;
+        let isFalse = false;
+
+        // Array
+        let fruits = ['apple', 'banana', 'orange'];
+        let numbers = [1, 2, 3, 4, 5];
+
+        // Object
+        let person = {
+            name: 'John',
+            age: 30,
+            isStudent: false
+        };
+
+        // Undefined
+        let undefinedVariable;
+
+        // Null
+        let nullValue = null;
+
+        // Function
+        function greet(name) {
+            return 'Hello, ' + name + '!';
+        }
+
+        // Displaying values
+        outputDiv.innerHTML += '<p>Numbers: ' + num1 + ', ' + num2 + '</p>';
+        outputDiv.innerHTML += '<p>Strings: ' + name + ', ' + message + '</p>';
+        outputDiv.innerHTML += '<p>Booleans: ' + isTrue + ', ' + isFalse + '</p>';
+        outputDiv.innerHTML += '<p>Arrays: ' + fruits.join(', ') + ', ' + numbers.join(', ') + '</p>';
+        outputDiv.innerHTML += '<p>Object: ' + JSON.stringify(person) + '</p>';
+        outputDiv.innerHTML += '<p>Undefined Variable: ' + undefinedVariable + '</p>';
+        outputDiv.innerHTML += '<p>Null Value: ' + nullValue + '</p>';
+
+        // Calling the function and displaying the result
+        let greeting = greet('World');
+        outputDiv.innerHTML += '<p>Greeting: ' + greeting + '</p>';
+    </script>
+</body>
+</html>

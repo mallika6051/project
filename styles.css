@@ -1,0 +1,46 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    position: relative; /* Required for pseudo-elements */
+}
+
+/* Pseudo-element Styles */
+h1::before {
+    content: 'Before Pseudo-element';
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+h1::after {
+    content: 'After Pseudo-element';
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+}

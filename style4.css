@@ -1,0 +1,38 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pagination Styles */
+.pagination {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+/* Additional Styles */
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
